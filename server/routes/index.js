@@ -1,16 +1,16 @@
-// const express = require('express');
-// const router = express.Router();
+// // const express = require('express');
+// // const router = express.Router();
 
-// router.get('/', function(req, res, next) {
-// 	res.render('index.html');
-// });
+// // router.get('/', function(req, res, next) {
+// // 	res.render('index.html');
+// // });
 
-// module.exports = router;
+// // module.exports = router;
 
-const user = require('./user')
-const article = require('./article')
+// const user = require('./user')
+// const article = require('./article')
 
-module.exports = (router) => {
-    // user(router)
-    article(router)
-}
+// module.exports = (router) => {
+//     // user(router)
+//     article(router)
+// }

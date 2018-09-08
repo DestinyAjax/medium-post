@@ -6,5 +6,7 @@ let options = { keepAlive: 300000, connectTimeoutMS: 30000, useNewUrlParser: tru
 mongoose.connect(config.connectionString, options);
 
 module.exports = {
-	User: require('../models/User')
+	User: require('../models/User'),
+	Log: require('../models/Log'),
+	Article: require('../models/Article')
 }

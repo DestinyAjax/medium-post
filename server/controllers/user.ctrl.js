@@ -9,9 +9,10 @@ module.exports = {
 	},
 
 	getAll: (req, res, next) => {
-		userService.getAll()
-			.then(users => res.json(users))
-			.catch(err => next(err));
+		// userService.getAll()
+		// 	.then(users => res.json(users))
+		// 	.catch(err => next(err));
+		res.json({});
 	},
 
 	register: (req, res, next) => {
