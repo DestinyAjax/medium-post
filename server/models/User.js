@@ -20,7 +20,7 @@ const schema = new Schema({
         unique: true,
         required: true
     },
-    createdDate: {
+    created_at: {
         type: Date,
         default: Date.now
     }

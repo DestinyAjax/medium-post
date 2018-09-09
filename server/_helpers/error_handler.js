@@ -1,6 +1,4 @@
-module.exports = errorHandler;
-
-function errorHandler(err, req, res, next) {
+const errorHandler = (err, req, res, next) => {
 	if(typeof(err) === 'string') {
 		// custom application error
 		return res.status(400).json({
@@ -26,3 +24,5 @@ function errorHandler(err, req, res, next) {
 		message: err.message
 	});
 }
+
+module.exports = errorHandler;
