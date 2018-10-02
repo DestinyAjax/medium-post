@@ -21,6 +21,7 @@
     "compression": "^1.7.3",
     "concurrently": "^4.0.1",
     "connect-multiparty": "^2.1.1",
+    "connected-react-router": "^4.5.0",
     "cors": "^2.8.4",
     "css-loader": "^1.0.0",
     "ejs": "^2.6.1",

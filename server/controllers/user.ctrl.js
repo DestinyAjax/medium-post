@@ -16,7 +16,7 @@ module.exports = {
 
 	register: (req, res, next) => {
 		userService.create(req.body)
-			.then(() => res.json({}))
+			.then(() => res.json({message: "Registration successful"}))
 			.catch(err => next(err));
 	},
 

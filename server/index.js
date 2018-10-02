@@ -18,17 +18,17 @@ cloudinary.config({
     api_secret: 'Ygi5G9JG8SK3_4N6vUwrtvhgDoc'
 });
 
+/** set up middlewares */
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+app.use(helmet())
+
 /** set up routes {API Endpoints} */
 app.use('/api', router)
 app.use('/api', require('./routes/logs'))
 app.use('/api', require('./routes/article'))
 app.use('/api', require('./routes/user'))
-
-/** set up middlewares */
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(cors());
-app.use(helmet())
 
 // use JWT auth to secure the api
 app.use(jwt());

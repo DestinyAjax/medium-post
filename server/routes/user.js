@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 router.route('/users/authenticate').post(userController.authenticate);
-router.route('/users/register').post(userController.register);
+router.post('/users/register', userController.register);
 router.route('/users/').get(userController.getAll);
 router.route('/users/current').get(userController.getCurrent);
 router.route('/users/:id').get(userController.getById);
